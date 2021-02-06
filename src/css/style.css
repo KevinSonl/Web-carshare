@@ -1,0 +1,321 @@
+
+/********************Homepage********************/
+/*Nav bar*/
+.my-nav{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.link-to-home{
+    font-size: 200%;
+    color:black;
+}
+
+.login-register{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.login-register.login{
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.search-btn {
+    border:none;
+    background-color: transparent;
+    font-size: 150%;
+}
+.search-btn-text{
+    font-size: 60%;
+}
+.nav-username-welcome{
+    margin-left: 10%;
+}
+
+
+
+
+
+
+/*@media only screen and (max-width: 770px){*/
+/*    .nav-username-welcome{*/
+/*        display:none;*/
+/*    }*/
+/*}*/
+
+
+
+@media only screen and (max-width: 576px){
+    .search-btn-text{
+        display:none;
+    }
+    .nav-item.nav-link-item,.search-btn{
+        font-size: 85%;
+    }
+    .link-to-home{
+        font-size: 100%;
+    }
+    .login-register{
+        width:70%;
+
+    }
+    .navbar-nav{
+        flex-direction: initial;
+    }
+
+    .nav-item.nav-link-item{
+        margin-right: 10%;
+    }
+    .nav-username-welcome{
+        display:none;
+    }
+}
+
+/*Jumbotron*/
+.jumbotron {
+    background-image: url("https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=1060");
+
+    padding-top:20px;
+    padding-bottom:60px;
+    left:10px;
+    height: auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media (min-width: 1px) {
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+}
+@media (min-width: 768px) {
+    .jumbotron h1 {
+        font-size: 3em;
+    }
+}
+
+.welcome-text{
+    font-size: 300%;
+}
+@media only screen and (max-width: 576px){
+    .welcome-text{
+        font-size: 300%;
+    }
+}
+
+/*Search by style*/
+.my-1.row.justify-content-center.align-items-center.search-by-style-text{
+    font-size: 100%;
+}
+
+
+/********************Homepage********************/
+
+/********************Search Page && Search Bar********************/
+
+.card-deck-search {
+    margin: 0 -15px;
+    justify-content: space-around;
+}
+
+.card-deck-search .card {
+    margin: 0 0 1rem;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck-search .card {
+        -ms-flex: 0 0 48.7%;
+        flex: 0 0 48.7%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck-search .card {
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .card-deck-search .card {
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+    }
+}
+
+.owl-prev, .owl-next {
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev { left: -38px; }
+.owl-next { right: -30px; }
+.owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
+
+.search-icon {
+    border-radius: 1px;
+}
+
+
+
+/********************Login&Register page********************/
+.col-sm-9.type-select{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.login-register-label{
+    margin-top: 1%;
+}
+.login-register-label-text{
+    font-size: 150%;
+}
+.form-group.row.login-register-information{
+    /*margin-top: 10%;*/
+}
+
+.invalid-username-text-invalid{
+    color:red;
+    font-size: 125%;
+}
+
+.invalid-username-text-valid{
+    color:lightgreen;
+    font-size: 125%;
+}
+
+.privacy-register{
+    margin-top: 2%;
+}
+.privacy-register-text{
+    margin-right: 1%;
+}
+/********************Login&Register page********************/
+
+
+/********************Owner profile page********************/
+/*Owner profile*/
+.btn.btn-primary.view_rent_history_btn{
+    margin-left: 10%;
+}
+.btn.btn-primary.cancel-add-btn{
+    margin-left: 10%;
+}
+.profile_edit_btn{
+    margin-bottom: 5%;
+}
+
+.delete-car-btn{
+    background-color: transparent;
+    border:none;
+    color:red;
+    font-size: 120%;
+}
+
+.invalid-vin-text{
+    color: red;
+}
+.add-car-description{
+    margin-bottom: 2%;
+}
+
+/*Rent history*/
+.cancel-trip-btn{
+    background-color: lightcoral;
+    border:none;
+}
+
+.confirm-trip-btn, .finish-trip-btn{
+    background-color: lightgreen;
+    border:none;
+}
+
+@media only screen and (max-width: 576px){
+    .btn.btn-primary.view_rent_history_btn{
+        margin-left: 2%;
+        width:50%;
+        font-size: 80%;
+    }
+
+    .btn.btn-primary.cancel-add-btn{
+        margin-left: 2%;
+    }
+
+    .btn.btn-primary.edit_profile_btn,.btn.btn-primary.confirm_profile_btn,
+    .btn.btn-primary.confirm-add-btn, .btn.btn-primary.cancel-add-btn{
+        width:35%;
+        font-size: 80%;
+    }
+
+    .can-hide{
+        display: none;
+    }
+
+    .trip-history-can-hide{
+        display: none;
+    }
+}
+
+/********************Owner profile page********************/
+
+/********************User profile page********************/
+
+@media only screen and (max-width: 576px){
+    .btn.btn-primary.confirm-profile-btn, .btn.btn-primary.view-like-list-btn,
+    .btn.btn-primary.view-trip-history-btn, .btn.btn-primary.edit-profile-btn{
+        font-size: 80%;
+    }
+}
+
+
+
+
+
+/********************User profile page********************/
+
+
+
+
+
+
+
+
+/********************Car Detail page********************/
+.btn.btn-primary.add-to-list{
+    margin-left: 10%;
+}
+
+.hostDetail{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 576px){
+    .btn.btn-primary.add-to-list{
+        margin-left: 2%;
+        font-size: 80%;
+    }
+    .btn.btn-primary.book-this-car{
+        font-size: 80%;
+    }
+}
+
+div.Book-this-car {
+/*    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15%;*/
+}
+.description-card {
+    width: 18em;
+}
+
+
+/********************Car Detail page********************/
+
